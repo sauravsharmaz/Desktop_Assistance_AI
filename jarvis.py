@@ -10,7 +10,7 @@ import smtplib
 engine = pyttsx3.init('sapi5')
 voices  = engine.getProperty('voices')
 
-# voice [0] stands for  male(David) voice, 1 for unknown(hazel) & 2 for female(zira) voice
+# voice [0] stands for  male(David) voice, 1 for unknown(hazel) & 2 for female(zira) voice. i used david here.
 engine.setProperty('voice',voices[0].id) 
 # print(voices[2].id) # <== checking the voices
 
