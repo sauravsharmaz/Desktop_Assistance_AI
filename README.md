@@ -5,3 +5,5 @@
                         JARVIS(WITHOUT INTERNET)
  The jarvis.py contain online whereas jarvis offline runs in offline also.
  
+ 
+ f dsnf smcnvdskj dfnvscvdsfnvkjs dcvj dkf vs mcxnvskjdfv cvjv sncxvfnv nv svnmnvskdv svs jnvvs vnsv
