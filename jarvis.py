@@ -6,6 +6,7 @@ import webbrowser
 import os
 import smtplib
 
+
 # sapi5 is the microsoft speech recognition API
 engine = pyttsx3.init('sapi5')
 voices  = engine.getProperty('voices')
@@ -29,7 +30,6 @@ def wishme():
     speak("I am Chhotta bhheeem. please tell me sir how may i help you")
 
 def takecommand():
-    # it takes micophone input from the user and return string output
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -43,6 +43,7 @@ def takecommand():
         # print(e)  # we will not print error because the error are mostly unidentifiable for a user
         print(e,"\n Sorry! please say that again")
         return "None"
+    return query
 
 def sendEmail(to,content):
      server = smtplib.SMTP('smtp.gmail.com',587)
@@ -59,7 +60,7 @@ if __name__ == "__main__":
     wishme()
     while True: 
         query= takecommand().lower()
-    
+        
         # logic for executing task based on query
         if 'wikipedia' in query:
             speak("searching wikipedia.....please wait...")
